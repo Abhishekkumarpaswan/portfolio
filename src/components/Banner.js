@@ -4,7 +4,6 @@ import headerImg from "../assets/img/deadpool.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import {DownloadButton} from "./Download";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -51,7 +50,7 @@ export const Banner = () => {
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="aligh-items-center">
+        <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
@@ -59,7 +58,6 @@ export const Banner = () => {
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Abhishek `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Programmer", "Coder", "Software Developer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <div className="download"><DownloadButton /></div>
                   <button onClick={() => console.log('connect')}><a href="https://www.linkedin.com/in/abhishek-kumar-paswan-7006281a6">Lets Connect<ArrowRightCircle size={25} /></a></button>
               </div>}
             </TrackVisibility>
