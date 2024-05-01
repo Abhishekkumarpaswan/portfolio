@@ -57,8 +57,9 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Abhishek `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Programmer", "Coder", "Software Developer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Highly motivated Computer Science student with a passion for building creative and user-friendly applications. Proficient in Python, web development frameworks, and mobile app development. Explore my portfolio to see how I can turn your ideas into reality.</p>
-                  <button onClick={() => console.log('connect')}><a href="https://www.linkedin.com/in/abhishek-kumar-paswan-7006281a6">Lets Connect<ArrowRightCircle size={25} /></a></button>
+                <p><p>Highly motivated and skilled in<strong> Python, web development</strong> (React), and<strong> mobile app development</strong> (Flutter). I create user-centric applications that solve problems and drive results. Let's collaborate!</p>
+</p>
+                  <button onClick={() => console.log('connected')}><a href="https://www.linkedin.com/in/abhishek-kumar-paswan-7006281a6">Lets Connect<ArrowRightCircle size={25}/></a></button>
               </div>}
             </TrackVisibility>
           </Col>

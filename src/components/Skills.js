@@ -32,8 +32,30 @@ export const Skills = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                      <div className="skillpara">
+                      <h2>Technical Skillset</h2>
+                      <p>I possess a strong foundation in various programming languages and frameworks, enabling me to tackle diverse development projects. Here's a breakdown of my core competencies:</p>
+                      <h3>Programming Languages</h3>
+                      <ul>
+                        <li><strong>Python:</strong> Proficient in Python syntax, data structures, and object-oriented programming principles.</li>
+                        <li><strong>C:</strong> Solid understanding of C fundamentals, memory management, and efficient algorithm implementation.</li>
+                      </ul>
+                      <h3>App Development</h3>
+                      <ul>
+                        <li><strong>Flutter:</strong> Adept at building user-friendly and cross-platform mobile applications using Flutter.</li>
+                      </ul>
+                      <h3>Web Development</h3>
+                      <ul>
+                        <li><strong>React:</strong> Skilled in building dynamic and interactive web applications with React.</li>
+                      </ul>  
+                      <p><strong>Additionally:</strong>
+                      <ul>
+                        <li>Familiarity with version control systems like Git for efficient code collaboration.</li>
+                        <li>Strong problem-solving skills and a passion for continuous learning to stay updated with the latest technologies.</li>
+                      </ul>
+                      </p>
+                      </div>
+
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="webdv" />

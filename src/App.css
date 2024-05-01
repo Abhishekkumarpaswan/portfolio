@@ -275,7 +275,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   width: 96%;
 }
-.banner button,.download {
+.banner button{
   color: #fff;
   font-weight: 700;
   font-size: 20px;
@@ -523,13 +523,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
-  border-radius: 0;
   position: relative;
   transition: 0.3s ease-in-out;
+  border-radius: 20px;
 }
 .contact form button span {
   z-index: 1;
   position: relative;
+  border-radius: 20px;
 }
 .contact form button:hover {
   color: #fff;
@@ -544,6 +545,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   left: 0;
   z-index: 0;
   transition: 0.3s ease-in-out;
+  border-radius: 20px;
 }
 .contact form button:hover::before {
   width: 100%;
@@ -638,4 +640,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   justify-content: center;
   line-height: 1;
   border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.skillpara{
+  text-align: left;
 }

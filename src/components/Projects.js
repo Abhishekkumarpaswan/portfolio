@@ -51,7 +51,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>I'm passionate about tackling real-world challenges through innovative applications.  Here, you'll find a selection of projects that showcase my capabilities in Python, web development, and app development.  Explore a variety of projects I've built, from user-friendly web applications to mobile apps that solve everyday problems.  Each project highlights my technical skills and problem-solving approach.  Get a glimpse into the diverse ways I can leverage technology to create impactful solutions.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -80,7 +80,7 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="section">
-                      <p>I'm passionate about tackling real-world challenges through innovative applications.  Here, you'll find a selection of projects that showcase my capabilities in Python, web development, and app development.  Explore a variety of projects I've built, from user-friendly web applications to mobile apps that solve everyday problems.  Each project highlights my technical skills and problem-solving approach.  Get a glimpse into the diverse ways I can leverage technology to create impactful solutions. </p>
+                      <p>I'm passionate about tackling real-world challenges through innovative applications.  Here, you'll find a selection of projects that showcase my capabilities in Python, web development, and app development.  Explore a variety of projects I've built, from user-friendly web applications to mobile apps that solve everyday problems.  Each project highlights my technical skills and problem-solving approach.  Get a glimpse into the diverse ways I can leverage technology to create impactful solutions.</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <p>Here I will put more projects.</p>
