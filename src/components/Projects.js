@@ -3,17 +3,20 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import port_proj from "../assets/img/port_proj.png"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { HeartPulseFill } from "react-bootstrap-icons";
 
 export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
+      title: "Personal portfolio",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: port_proj,
+      HeartPulseFill,
     },
     {
       title: "Business Startup",
@@ -55,13 +58,13 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">App Dev</Nav.Link>
+                      <Nav.Link eventKey="first">Web Dev</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="second">Python/AI</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Web Dev</Nav.Link>
+                      <Nav.Link eventKey="third">App Dev</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
