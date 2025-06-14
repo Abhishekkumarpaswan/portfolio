@@ -3,6 +3,7 @@ import { Col, Row, Alert } from "react-bootstrap";
 
 export const Newsletter = ({ status, message, onValidated }) => {
   const [email, setEmail] = useState('');
+  const [localStatus, setLocalStatus] = useState('');
 
   useEffect(() => {
     if (status === 'success') clearFields();
@@ -10,11 +11,18 @@ export const Newsletter = ({ status, message, onValidated }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    email &&
-    email.indexOf("@") > -1 &&
+    if (!email) {
+      setLocalStatus('Please enter your email.');
+      return;
+    }
+    if (email.indexOf("@") === -1) {
+      setLocalStatus('Please enter a valid email address.');
+      return;
+    }
+    setLocalStatus('');
     onValidated({
       EMAIL: email
-    })
+    });
   }
 
   const clearFields = () => {
@@ -30,6 +38,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
               {status === 'sending' && <Alert>Sending...</Alert>}
               {status === 'error' && <Alert variant="danger">{message}</Alert>}
               {status === 'success' && <Alert variant="success">{message}</Alert>}
+              {localStatus && <Alert variant="warning">{localStatus}</Alert>}
             </Col>
             <Col md={6} xl={7}>
               <form onSubmit={handleSubmit}>
