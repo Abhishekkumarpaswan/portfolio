@@ -5,6 +5,7 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import React,{useMemo} from "react";
+import myResume from "../assets/My_resume.pdf";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -62,7 +63,7 @@ export const Banner = () => {
                 <h1>{`Hi! I'm Abhishek `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Programmer", "Coder", "Software Developer" ]'><span className="wrap">{text}</span></span></h1>
                 <p><p>Highly motivated and skilled in<strong> Python, web development</strong> (React), and<strong> mobile app development</strong> (Flutter). I create user-centric applications that solve problems and drive results. Let's collaborate!</p>
 </p>
-                  <button onClick={() => console.log('connected')}><a href="https://www.linkedin.com/in/abhishek-kumar-paswan-7006281a6">Lets Connect<ArrowRightCircle size={25}/></a></button>
+                  <button><a href={myResume} download="Abhishek_kumar_paswan_Resume.pdf" style={{ textDecoration:"none", color: "inherit", display: "flex", alignItems: "center"}}>Download Resume<ArrowRightCircle size={25}/></a></button>
               </div>}
             </TrackVisibility>
           </Col>

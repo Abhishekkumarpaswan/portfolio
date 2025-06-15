@@ -17,37 +17,40 @@ export const Contact = () => {
   const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
-      setFormDetails({
-        ...formDetails,
-        [category]: value
-      })
+    setFormDetails({
+      ...formDetails,
+      [category]: value
+    })
   }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    //Basic Validation
-    try{
-    let response = await fetch("http://abhishekpaswan.me/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText("Send");
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code === 200) {
-      setStatus({ success: true, message: 'Message sent successfully'});
-    } else {
-      setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
+    try {
+      const response = await fetch("https://formspree.io/f/xzzggvll", { 
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          firstName: formDetails.firstName,
+          lastName: formDetails.lastName,
+          email: formDetails.email,
+          phone: formDetails.phone,
+          message: formDetails.message,
+        })
+      });
+      if (response.ok) {
+        setStatus({ success: true, message: 'Message sent successfully!' });
+        setFormDetails(formInitialDetails);
+      } else {
+        setStatus({ success: false, message: 'Something went wrong, please try again later.' });
+      }
+    } catch (error) {
+      setStatus({ success: false, message: 'Network error, please try again later.' });
     }
-  }catch (error) {
     setButtonText("Send");
-    setStatus({ success: false, message: 'Something went wrong, please try again later.' });
-  }
-};
+  };
 
   return (
     <section className="contact" id="connect">

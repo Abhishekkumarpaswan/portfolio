@@ -378,19 +378,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button {
   color: black;
   font-weight: 700;
-  font-size: 18px; /* Slightly smaller for better proportion */
+  font-size: 18px;
   margin-top: 60px;
   letter-spacing: 0.8px;
-  display: inline-flex; /* Changed to inline-flex for better alignment */
+  display: inline-flex;
   align-items: center;
-  justify-content: center; /* Better centering */
+  justify-content: center;
   background-color: #3D5AFE;
-  padding: 16px 36px; /* Adjusted padding */
-  border-radius: 50px; /* More rounded corners */
-  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother transition */
-  box-shadow: 0 4px 8px rgba(61, 90, 254, 0.2); /* Subtle shadow */
+  padding: 16px 36px;
+  border-radius: 50px;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 8px rgba(61, 90, 254, 0.2);
   position: relative;
-  overflow: hidden; /* For pseudo-element */
+  overflow: hidden;
   border: none;
   cursor: pointer;
 }
@@ -410,26 +410,45 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 50px;
 }
 
-.banner button:hover {
-  color: #FFFFFF;
+.banner button:hover,
+.banner button:active {
+  color: #fff;
   transform: translateY(-3px);
-  box-shadow: 0 12px 24px rgba(61, 90, 254, 0.3); /* Enhanced shadow */
+  box-shadow: 0 12px 24px rgba(61, 90, 254, 0.3);
 }
 
-.banner button:hover::before {
+.banner button:hover::before,
+.banner button:active::before {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-.banner button span {
+.banner button span,
+.banner button a,
+.banner button a span {
   position: relative;
-  z-index: 2; /* Ensures text stays above pseudo-element */
+  z-index: 2;
   display: flex;
   align-items: center;
+  color: inherit;
+  transition: color 0.2s ease-in-out;
+}
+
+.banner button a {
+  text-decoration: none;
+}
+
+.banner button:hover span,
+.banner button:hover a,
+.banner button:hover a span,
+.banner button:active span,
+.banner button:active a,
+.banner button:active a span {
+  color: #fff !important;
 }
 
 .banner button svg {
-  font-size: 22px; /* Slightly smaller for balance */
+  font-size: 22px;
   margin-left: 12px;
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   position: relative;
@@ -437,15 +456,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner button:hover svg {
-  margin-left: 20px; /* Slightly less movement for subtlety */
-  transform: translateX(5px); /* Added for extra smoothness */
+  margin-left: 20px;
+  transform: translateX(5px);
 }
 
 .banner button:active {
-  transform: translateY(-1px); /* Pressed state */
+  transform: translateY(-1px);
   box-shadow: 0 6px 12px rgba(61, 90, 254, 0.3);
 }
-
 .banner img {
   animation: updown 3s linear infinite;
 }

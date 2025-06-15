@@ -62,7 +62,7 @@ export const NavBar = () => {
                 <a href="https://github.com/Abhishekkumarpaswan"><img src={navIcon4} alt="" /></a>
               </div>
               <HashLink to='#connect'>
-                <button className="vvd"><span><a href="./Contact.js">Lets Connect</a></span></button>
+                <button className="vvd"><span><a href="./Contact.js" style={{ textDecoration:"none", color: "inherit", display: "flex", alignItems: "center"}}>Mail me</a></span></button>
               </HashLink>
               <button
             className="theme-toggle"
