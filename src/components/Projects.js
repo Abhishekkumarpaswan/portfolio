@@ -12,7 +12,7 @@ import { HeartPulseFill } from "react-bootstrap-icons";
 
 export const Projects = () => {
 
-  const projects = [
+  const projects1 = [
     {
       title: "Personal portfolio",
       description: "Design & Development",
@@ -25,6 +25,40 @@ export const Projects = () => {
       description: "Entertainmnet",
       imgUrl: movie,
       url: "https://github.com/Abhishekkumarpaswan/MyMovieList",
+      HeartPulseFill,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg3,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg1,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg2,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg3,
+    },
+  ];
+  const projects2 = [
+    {
+      title: "Personal portfolio",
+      description: "Design & Development",
+      imgUrl: projImg1,
+      HeartPulseFill,
+    },
+    {
+      title: "MyMovieList",
+      description: "Entertainmnet",
+      imgUrl: projImg2,
       HeartPulseFill,
     },
     {
@@ -75,7 +109,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          projects1.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -88,6 +122,20 @@ export const Projects = () => {
                     </Tab.Pane>
                     <Tab.Pane eventKey="section">
                       <p>I'm passionate about tackling real-world challenges through innovative applications.  Here, you'll find a selection of projects that showcase my capabilities in Python, web development, and app development.  Explore a variety of projects I've built, from user-friendly web applications to mobile apps that solve everyday problems.  Each project highlights my technical skills and problem-solving approach.  Get a glimpse into the diverse ways I can leverage technology to create impactful solutions.</p>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="second">
+                      <Row>
+                        {
+                          projects2.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <p>Here I will put more projects.</p>
