@@ -5,6 +5,7 @@ import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import port_proj from "../assets/img/port_proj.png"
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import movie from "../assets/img/movie.png"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { HeartPulseFill } from "react-bootstrap-icons";
@@ -16,12 +17,15 @@ export const Projects = () => {
       title: "Personal portfolio",
       description: "Design & Development",
       imgUrl: port_proj,
+      url: "https:\\abhishekpaswan.me",
       HeartPulseFill,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "MyMovieList",
+      description: "Entertainmnet",
+      imgUrl: movie,
+      url: "https://github.com/Abhishekkumarpaswan/MyMovieList",
+      HeartPulseFill,
     },
     {
       title: "Business Startup",
