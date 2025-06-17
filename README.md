@@ -35,7 +35,7 @@ No need to run locally!
 
 ## 📸 Screenshots
 
-![Portfolio Screenshot](./assets/screenshot-main.png)
+![Portfolio Screenshot](./public/pub_screen.png)
 
 *Modern, minimalist, and professional design.*
 
