@@ -5,7 +5,7 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import React,{useMemo} from "react";
-import myResume from "../assets/My_resume.pdf";
+import myResume from "../assets/My_Resume_GS.pdf";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
