@@ -9,12 +9,13 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { HeartPulseFill } from "react-bootstrap-icons";
 import screen from "../assets/img/screen.png";
+import ecoscan from "../assets/img/ecoscan.png";
 export const Projects = () => {
 
   const projects1 = [
     {
       title: "Personal portfolio",
-      description: "Design & Development",
+      description: "Portfolio Website",
       imgUrl: screen,
       url: "https:\\abhishekpaswan.me",
       HeartPulseFill,
@@ -27,9 +28,11 @@ export const Projects = () => {
       HeartPulseFill,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "EcoScan",
+      description: "AI-based Waste Management",
+      imgUrl: ecoscan,
+      url: "https://ecoscan.vly.site/",
+      HeartPulseFill,
     },
     {
       title: "Business Startup",
