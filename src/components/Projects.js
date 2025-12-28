@@ -4,13 +4,13 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import movie from "../assets/img/movie.png"
-import lumina from "../assets/img/lumina.png"
+import movie from "../assets/img/movie.png";
+import lumina from "../assets/img/lumina.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { HeartPulseFill } from "react-bootstrap-icons";
 import screen from "../assets/img/screen.png";
-import ecoscan from "../assets/img/ecoscan.png";
+import ecoscan from "../assets/img/esoscan.png";
 export const Projects = () => {
 
   const projects1 = [
