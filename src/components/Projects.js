@@ -5,6 +5,7 @@ import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import movie from "../assets/img/movie.png"
+import lumina from "../assets/img/lumina.png"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { HeartPulseFill } from "react-bootstrap-icons";
@@ -35,9 +36,11 @@ export const Projects = () => {
       HeartPulseFill,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Lumina",
+      description: "Static Ecommerce Website with Modern UI",
+      imgUrl: lumina,
+      url: "https://lumina-ten-iota.vercel.app/",
+      HeartPulseFill,
     },
     {
       title: "Business Startup",
