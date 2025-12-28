@@ -46,11 +46,13 @@ export const Projects = () => {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
+      HeartPulseFill,
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg3,
+      HeartPulseFill,
     },
   ];
   const projects2 = [
